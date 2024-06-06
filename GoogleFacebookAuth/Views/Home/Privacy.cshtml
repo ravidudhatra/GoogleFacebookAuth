@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@* Showing The ServerSide Data Using DataTable *@
+<link href="~/lib/datatables/css/datatables.bootstrap4.min.css" rel="stylesheet" />
+     
+<div class="container">
+    <h3 class="text-primary">Customers</h3>
+    <hr />
+
+    <table id="Customers" class="table table-striped table-bordered dt-responsive nowrap">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Date Of Birth</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts
+{
+    <script src="~/lib/datatables/js/jquery.datatables.min.js"></script>
+      <script src="~/lib/datatables/js/datatables.bootstrap4.min.js"></script>
+    <script src="~/js/customersdatatable.js"></script>
+}
+
+
+
+
+
+
